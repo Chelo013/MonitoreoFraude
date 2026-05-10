@@ -1,0 +1,37 @@
+# Entornos virtuales
+venv/
+env/
+.env
+
+# Cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Datos grandes
+*.csv
+PS_20174392719_1491204439457_log.csv
+dataset/
+data/
+
+# Variables de entorno
+.env
+.env.local
+
+# Logs
+*.log
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Scripts de entrenamiento sueltos / experimentales
+forest.py
+deepsvvm.py
+autoencoder.py
+gnn_fraude.py
+
+# Matrices enormes de entrenamiento que bloquean GitHub
+processed_data_paysim/X_*.npy
+processed_data_paysim/y_*.npy
+df_ae_filtro_train_paysim.csv

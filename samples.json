@@ -1,0 +1,652 @@
+[
+    {
+        "id": 1,
+        "label": "TRANSFER de $963,532.14",
+        "is_fraud": true,
+        "data": {
+            "amount": 963532.14,
+            "oldbalanceOrg": 963532.14,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 2,
+        "label": "CASH_OUT de $181.00",
+        "is_fraud": true,
+        "data": {
+            "amount": 181.0,
+            "oldbalanceOrg": 181.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 21182.0,
+            "newbalanceDest": 0.0,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 3,
+        "label": "CASH_OUT de $14,949.84",
+        "is_fraud": true,
+        "data": {
+            "amount": 14949.84,
+            "oldbalanceOrg": 14949.84,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 18161.79,
+            "newbalanceDest": 33111.63,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 4,
+        "label": "PAYMENT de $7,861.64",
+        "is_fraud": false,
+        "data": {
+            "amount": 7861.64,
+            "oldbalanceOrg": 176087.23,
+            "newbalanceOrig": 168225.59,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 5,
+        "label": "CASH_OUT de $963,532.14",
+        "is_fraud": true,
+        "data": {
+            "amount": 963532.14,
+            "oldbalanceOrg": 963532.14,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 132382.57,
+            "newbalanceDest": 1095914.71,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 6,
+        "label": "TRANSFER de $311,685.89",
+        "is_fraud": false,
+        "data": {
+            "amount": 311685.89,
+            "oldbalanceOrg": 10835.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 6267.0,
+            "newbalanceDest": 2719172.89,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 7,
+        "label": "CASH_OUT de $20,128.00",
+        "is_fraud": true,
+        "data": {
+            "amount": 20128.0,
+            "oldbalanceOrg": 20128.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 6268.0,
+            "newbalanceDest": 12145.85,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 8,
+        "label": "PAYMENT de $7,107.77",
+        "is_fraud": false,
+        "data": {
+            "amount": 7107.77,
+            "oldbalanceOrg": 183195.0,
+            "newbalanceOrig": 176087.23,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 9,
+        "label": "DEBIT de $9,644.94",
+        "is_fraud": false,
+        "data": {
+            "amount": 9644.94,
+            "oldbalanceOrg": 4465.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 10845.0,
+            "newbalanceDest": 157982.12,
+            "type": "DEBIT"
+        }
+    },
+    {
+        "id": 10,
+        "label": "TRANSFER de $10,539.37",
+        "is_fraud": true,
+        "data": {
+            "amount": 10539.37,
+            "oldbalanceOrg": 10539.37,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 11,
+        "label": "CASH_OUT de $35,063.63",
+        "is_fraud": true,
+        "data": {
+            "amount": 35063.63,
+            "oldbalanceOrg": 35063.63,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 31140.0,
+            "newbalanceDest": 7550.03,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 12,
+        "label": "TRANSFER de $14,949.84",
+        "is_fraud": true,
+        "data": {
+            "amount": 14949.84,
+            "oldbalanceOrg": 14949.84,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 13,
+        "label": "PAYMENT de $1,563.82",
+        "is_fraud": false,
+        "data": {
+            "amount": 1563.82,
+            "oldbalanceOrg": 450.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 14,
+        "label": "CASH_OUT de $1,096,187.24",
+        "is_fraud": true,
+        "data": {
+            "amount": 1096187.24,
+            "oldbalanceOrg": 1096187.24,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 1096187.24,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 15,
+        "label": "TRANSFER de $1,277,212.77",
+        "is_fraud": true,
+        "data": {
+            "amount": 1277212.77,
+            "oldbalanceOrg": 1277212.77,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 16,
+        "label": "CASH_OUT de $18,627.02",
+        "is_fraud": true,
+        "data": {
+            "amount": 18627.02,
+            "oldbalanceOrg": 18627.02,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 147251.58,
+            "newbalanceDest": 165878.6,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 17,
+        "label": "PAYMENT de $9,839.64",
+        "is_fraud": false,
+        "data": {
+            "amount": 9839.64,
+            "oldbalanceOrg": 170136.0,
+            "newbalanceOrig": 160296.36,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 18,
+        "label": "PAYMENT de $11,668.14",
+        "is_fraud": false,
+        "data": {
+            "amount": 11668.14,
+            "oldbalanceOrg": 41554.0,
+            "newbalanceOrig": 29885.86,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 19,
+        "label": "PAYMENT de $2,560.74",
+        "is_fraud": false,
+        "data": {
+            "amount": 2560.74,
+            "oldbalanceOrg": 5070.0,
+            "newbalanceOrig": 2509.26,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 20,
+        "label": "CASH_OUT de $229,133.94",
+        "is_fraud": false,
+        "data": {
+            "amount": 229133.94,
+            "oldbalanceOrg": 15325.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 5083.0,
+            "newbalanceDest": 51513.44,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 21,
+        "label": "PAYMENT de $1,157.86",
+        "is_fraud": false,
+        "data": {
+            "amount": 1157.86,
+            "oldbalanceOrg": 21156.0,
+            "newbalanceOrig": 19998.14,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 22,
+        "label": "CASH_OUT de $2,806.00",
+        "is_fraud": true,
+        "data": {
+            "amount": 2806.0,
+            "oldbalanceOrg": 2806.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 26202.0,
+            "newbalanceDest": 0.0,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 23,
+        "label": "TRANSFER de $235,238.66",
+        "is_fraud": true,
+        "data": {
+            "amount": 235238.66,
+            "oldbalanceOrg": 235238.66,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 24,
+        "label": "PAYMENT de $671.64",
+        "is_fraud": false,
+        "data": {
+            "amount": 671.64,
+            "oldbalanceOrg": 15123.0,
+            "newbalanceOrig": 14451.36,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 25,
+        "label": "PAYMENT de $4,098.78",
+        "is_fraud": false,
+        "data": {
+            "amount": 4098.78,
+            "oldbalanceOrg": 503264.0,
+            "newbalanceOrig": 499165.22,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 26,
+        "label": "PAYMENT de $3,876.41",
+        "is_fraud": false,
+        "data": {
+            "amount": 3876.41,
+            "oldbalanceOrg": 67852.0,
+            "newbalanceOrig": 63975.59,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 27,
+        "label": "TRANSFER de $1,096,187.24",
+        "is_fraud": true,
+        "data": {
+            "amount": 1096187.24,
+            "oldbalanceOrg": 1096187.24,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 28,
+        "label": "TRANSFER de $25,071.46",
+        "is_fraud": true,
+        "data": {
+            "amount": 25071.46,
+            "oldbalanceOrg": 25071.46,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 29,
+        "label": "CASH_OUT de $1,277,212.77",
+        "is_fraud": true,
+        "data": {
+            "amount": 1277212.77,
+            "oldbalanceOrg": 1277212.77,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 2444985.19,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 30,
+        "label": "TRANSFER de $20,128.00",
+        "is_fraud": true,
+        "data": {
+            "amount": 20128.0,
+            "oldbalanceOrg": 20128.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 31,
+        "label": "CASH_OUT de $416,001.33",
+        "is_fraud": true,
+        "data": {
+            "amount": 416001.33,
+            "oldbalanceOrg": 0.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 102.0,
+            "newbalanceDest": 9291619.62,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 32,
+        "label": "PAYMENT de $7,817.71",
+        "is_fraud": false,
+        "data": {
+            "amount": 7817.71,
+            "oldbalanceOrg": 53860.0,
+            "newbalanceOrig": 46042.29,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 33,
+        "label": "PAYMENT de $11,633.76",
+        "is_fraud": false,
+        "data": {
+            "amount": 11633.76,
+            "oldbalanceOrg": 10127.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 34,
+        "label": "TRANSFER de $181.00",
+        "is_fraud": true,
+        "data": {
+            "amount": 181.0,
+            "oldbalanceOrg": 181.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 35,
+        "label": "DEBIT de $5,337.77",
+        "is_fraud": false,
+        "data": {
+            "amount": 5337.77,
+            "oldbalanceOrg": 41720.0,
+            "newbalanceOrig": 36382.23,
+            "oldbalanceDest": 41898.0,
+            "newbalanceDest": 40348.79,
+            "type": "DEBIT"
+        }
+    },
+    {
+        "id": 36,
+        "label": "DEBIT de $1,065.41",
+        "is_fraud": false,
+        "data": {
+            "amount": 1065.41,
+            "oldbalanceOrg": 1817.0,
+            "newbalanceOrig": 751.59,
+            "oldbalanceDest": 10330.0,
+            "newbalanceDest": 0.0,
+            "type": "DEBIT"
+        }
+    },
+    {
+        "id": 37,
+        "label": "CASH_OUT de $132,842.64",
+        "is_fraud": true,
+        "data": {
+            "amount": 132842.64,
+            "oldbalanceOrg": 4499.08,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 132842.64,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 38,
+        "label": "CASH_OUT de $25,071.46",
+        "is_fraud": true,
+        "data": {
+            "amount": 25071.46,
+            "oldbalanceOrg": 25071.46,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 9083.76,
+            "newbalanceDest": 34155.22,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 39,
+        "label": "PAYMENT de $6,061.13",
+        "is_fraud": false,
+        "data": {
+            "amount": 6061.13,
+            "oldbalanceOrg": 443.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 40,
+        "label": "PAYMENT de $1,373.43",
+        "is_fraud": false,
+        "data": {
+            "amount": 1373.43,
+            "oldbalanceOrg": 13854.0,
+            "newbalanceOrig": 12480.57,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 41,
+        "label": "TRANSFER de $2,806.00",
+        "is_fraud": true,
+        "data": {
+            "amount": 2806.0,
+            "oldbalanceOrg": 2806.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 42,
+        "label": "PAYMENT de $9,478.39",
+        "is_fraud": false,
+        "data": {
+            "amount": 9478.39,
+            "oldbalanceOrg": 116494.0,
+            "newbalanceOrig": 107015.61,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 43,
+        "label": "TRANSFER de $18,627.02",
+        "is_fraud": true,
+        "data": {
+            "amount": 18627.02,
+            "oldbalanceOrg": 18627.02,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 44,
+        "label": "CASH_OUT de $235,238.66",
+        "is_fraud": true,
+        "data": {
+            "amount": 235238.66,
+            "oldbalanceOrg": 235238.66,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 235238.66,
+            "type": "CASH_OUT"
+        }
+    },
+    {
+        "id": 45,
+        "label": "PAYMENT de $4,024.36",
+        "is_fraud": false,
+        "data": {
+            "amount": 4024.36,
+            "oldbalanceOrg": 2671.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 46,
+        "label": "PAYMENT de $3,099.97",
+        "is_fraud": false,
+        "data": {
+            "amount": 3099.97,
+            "oldbalanceOrg": 20771.0,
+            "newbalanceOrig": 17671.03,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    },
+    {
+        "id": 47,
+        "label": "TRANSFER de $215,310.30",
+        "is_fraud": false,
+        "data": {
+            "amount": 215310.3,
+            "oldbalanceOrg": 705.0,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 22425.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 48,
+        "label": "DEBIT de $9,302.79",
+        "is_fraud": false,
+        "data": {
+            "amount": 9302.79,
+            "oldbalanceOrg": 11299.0,
+            "newbalanceOrig": 1996.21,
+            "oldbalanceDest": 29832.0,
+            "newbalanceDest": 16896.7,
+            "type": "DEBIT"
+        }
+    },
+    {
+        "id": 49,
+        "label": "TRANSFER de $35,063.63",
+        "is_fraud": true,
+        "data": {
+            "amount": 35063.63,
+            "oldbalanceOrg": 35063.63,
+            "newbalanceOrig": 0.0,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "TRANSFER"
+        }
+    },
+    {
+        "id": 50,
+        "label": "PAYMENT de $1,864.28",
+        "is_fraud": false,
+        "data": {
+            "amount": 1864.28,
+            "oldbalanceOrg": 21249.0,
+            "newbalanceOrig": 19384.72,
+            "oldbalanceDest": 0.0,
+            "newbalanceDest": 0.0,
+            "type": "PAYMENT"
+        }
+    }
+]

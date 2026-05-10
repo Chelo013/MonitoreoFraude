@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antifraude AI | Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+    
+    <nav class="top-nav">
+        <div class="nav-brand">Sentinel <span class="accent-text">AI</span></div>
+        <ul class="nav-links">
+            <li><a href="#pruebas-section">Pruebas</a></li>
+            <li><a href="#analizador-section">Analizador</a></li>
+            <li><a href="#grafos-section">Red de Grafos</a></li>
+            <li><a href="#dashboard-section">Dashboard</a></li>
+        </ul>
+        <div class="status-badge">
+            <span class="indicator"></span> En línea
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="main-header">
+            <div class="header-content">
+                <h1>Sentinel <span class="accent-text">AI</span></h1>
+                <p>Sistema de Detección de Fraude con Ensamble de Jurado</p>
+            </div>
+        </header>
+
+        <!-- 1. BASE DE DATOS DE PRUEBAS (Arriba de todo) -->
+        <section id="pruebas-section" class="glass-panel section-spacing">
+            <div class="panel-header">
+                <h2><i class="icon">🗄️</i> Base de Datos de Pruebas</h2>
+                <p class="description">Selecciona un caso real del dataset PaySim para cargarlo en el analizador.</p>
+            </div>
+            <div class="table-container">
+                <table class="samples-table" id="samples-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descripción</th>
+                            <th>Tipo</th>
+                            <th>Monto</th>
+                            <th>Verdad</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Llenado por JS -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination-controls" id="pagination-controls">
+                <button id="prev-page" class="page-btn" disabled>← Anterior</button>
+                <span id="page-info">Página 1 de 5</span>
+                <button id="next-page" class="page-btn">Siguiente →</button>
+            </div>
+        </section>
+
+        <!-- 2. ANALIZADOR -->
+        <section id="analizador-section" class="dashboard section-spacing">
+            <div class="panel data-panel glass-panel">
+                <div class="panel-header">
+                    <h2><i class="icon">🔍</i> Analizador de Transacciones</h2>
+                </div>
+                
+                <form id="transaction-form">
+                    <div class="user-guess-section">
+                        <label>Si pruebas un caso manual, ¿cuál es tu predicción?</label>
+                        <div class="guess-options">
+                            <label class="guess-radio">
+                                <input type="radio" name="user_guess" value="fraud">
+                                <span class="radio-custom fraud-guess">🚨 Fraude</span>
+                            </label>
+                            <label class="guess-radio">
+                                <input type="radio" name="user_guess" value="normal">
+                                <span class="radio-custom safe-guess">🛡️ Normal</span>
+                            </label>
+                            <label class="guess-radio">
+                                <input type="radio" name="user_guess" value="none" checked>
+                                <span class="radio-custom neutral-guess">🤔 No sé</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="type">Tipo de Transacción</label>
+                        <select id="type" required>
+                            <option value="TRANSFER">Transferencia (TRANSFER)</option>
+                            <option value="CASH_OUT">Retiro Efectivo (CASH_OUT)</option>
+                            <option value="CASH_IN">Depósito (CASH_IN)</option>
+                            <option value="PAYMENT">Pago (PAYMENT)</option>
+                            <option value="DEBIT">Débito (DEBIT)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label for="amount">Monto ($)</label>
+                            <input type="number" id="amount" step="0.01" required placeholder="Ej: 1500.00">
+                        </div>
+                    </div>
+
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label for="oldbalanceOrg">Balance Origen (Antes)</label>
+                            <input type="number" id="oldbalanceOrg" step="0.01" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="newbalanceOrig">Balance Origen (Después)</label>
+                            <input type="number" id="newbalanceOrig" step="0.01" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="oldbalanceDest">Balance Destino (Antes)</label>
+                            <input type="number" id="oldbalanceDest" step="0.01" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="newbalanceDest">Balance Destino (Después)</label>
+                            <input type="number" id="newbalanceDest" step="0.01" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="side-panels">
+                <div class="panel weights-panel glass-panel">
+                    <div class="panel-header">
+                        <h2><i class="icon">⚖️</i> Jurado AI - Pesos</h2>
+                    </div>
+                    <p class="description">Ajusta la influencia de cada modelo en el veredicto final. Total máximo recomendado: 1.0</p>
+                    
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <label>Isolation Forest (Anomalías Estadísticas)</label>
+                            <span class="weight-value" id="val-if">0.33</span>
+                        </div>
+                        <input type="range" id="weight-if" min="0" max="1" step="0.01" value="0.33">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <label>Autoencoder (Reconstrucción Neuronal)</label>
+                            <span class="weight-value" id="val-ae">0.33</span>
+                        </div>
+                        <input type="range" id="weight-ae" min="0" max="1" step="0.01" value="0.33">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <label>Deep SVDD (Representación Esférica)</label>
+                            <span class="weight-value" id="val-svdd">0.34</span>
+                        </div>
+                        <input type="range" id="weight-svdd" min="0" max="1" step="0.01" value="0.34">
+                    </div>
+                    
+                    <div class="slider-group threshold-group">
+                        <div class="slider-header">
+                            <label>Umbral de Fraude</label>
+                            <span class="weight-value" style="color: #ef4444; background: rgba(239, 68, 68, 0.2); border: 1px solid rgba(239, 68, 68, 0.4);" id="val-th">0.50</span>
+                        </div>
+                        <input type="range" id="threshold" min="0" max="1" step="0.01" value="0.50">
+                    </div>
+                </div>
+                
+                <button id="analyze-btn" class="primary-btn">
+                    <span class="btn-text">Analizar Transacción</span>
+                    <span class="loader" style="display: none;"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- 4. RESULTADOS (Siempre visible, con estado vacío inicial) -->
+        <section id="results-section" class="results glass-panel section-spacing">
+            <div class="panel-header">
+                <h2>Veredicto del Jurado</h2>
+            </div>
+            
+            <div class="verdict-container" id="verdict-wrapper">
+                <div class="empty-state" id="empty-results-state">
+                    <p>A la espera de una transacción para analizar...</p>
+                    <div class="loader-waiting"></div>
+                </div>
+                
+                <div class="verdict-content hidden" id="verdict-content">
+                    <div class="verdict-card" id="verdict-card">
+                        <div class="verdict-icon">🛡️</div>
+                        <h3 id="verdict-title">Transacción Segura</h3>
+                        <p id="verdict-score">Puntaje de Riesgo: <span class="score-number">0.00</span></p>
+                        <div id="user-comparison" class="user-comparison hidden">
+                            <!-- Aquí va si el usuario acertó o no -->
+                        </div>
+                    </div>
+
+                    <div class="jury-votes">
+                        <div class="model-vote" id="vote-if">
+                            <div class="model-name">Isolation Forest</div>
+                            <div class="vote-result">Seguro</div>
+                        </div>
+                        <div class="model-vote" id="vote-ae">
+                            <div class="model-name">Autoencoder</div>
+                            <div class="vote-result">Seguro</div>
+                        </div>
+                        <div class="model-vote" id="vote-svdd">
+                            <div class="model-name">Deep SVDD</div>
+                            <div class="vote-result">Seguro</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="metrics-details hidden" id="metrics-details">
+                <h4>Métricas Internas</h4>
+                <div class="metrics-grid" id="metrics-grid">
+                    <!-- Llenado dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. VISUALIZACIÓN DE GRAFOS (Investigación) -->
+        <section id="grafos-section" class="glass-panel section-spacing">
+            <div class="panel-header">
+                <h2><i class="icon">🕸️</i> Análisis de Redes y Grafos (I+D)</h2>
+                <p class="description">
+                    Me hubiera encantado implementar un <strong>Modelo de Grafos (GNN)</strong> para este proyecto. Las redes son increíbles para detectar el fraude porque analizan las "relaciones" entre cuentas (quién transfiere a quién) en lugar de ver cada transacción de forma aislada, lo que es vital para detectar el lavado de dinero en cadena.
+                    <br><br>
+                    Sin embargo, llevar un modelo de grafos a producción requiere infraestructura pesada (como bases de datos Neo4j) y la interacción en la web se volvía demasiado compleja para una demo rápida. Aún así, aquí te dejo una <strong>visualización interactiva 3D</strong> que generé con Python mostrando cómo se ve una red de fraude en PaySim.
+                </p>
+                <p style="text-align: center; color: var(--accent-glow); font-size: 0.9rem; margin-top: 1rem;">
+                    💡 <em>Explora el universo 3D: Arrastra el ratón para rotar la cámara, haz scroll para hacer zoom y mantén presionado un nodo para moverlo.</em>
+                </p>
+            </div>
+            
+            <div class="iframe-container" style="background: rgba(10, 15, 30, 0.4); border-radius: 1rem; overflow: hidden; border: 1px solid var(--panel-border); margin-top: 1.5rem; position: relative; box-shadow: inset 0 0 50px rgba(0,0,0,0.8), 0 10px 30px rgba(0,0,0,0.5);">
+                <!-- Añadido scrolling="no" para evitar esa horrible barra blanca -->
+                <iframe src="grafo_fraude_interactivo.html" width="100%" height="700px" style="border: none; overflow: hidden; background: transparent;" scrolling="no" allowtransparency="true"></iframe>
+            </div>
+        </section>
+
+        <!-- 5. DASHBOARD DE GRÁFICOS (Al final) -->
+        <section id="dashboard-section" class="stats-section glass-panel section-spacing">
+            <div class="panel-header">
+                <h2><i class="icon">📈</i> Rendimiento Histórico de Modelos</h2>
+                <p class="description">Estadísticas globales del uso de cada modelo por el jurado.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="chart-container">
+                    <canvas id="fraudVsNormalChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="usageChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
