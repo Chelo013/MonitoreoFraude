@@ -1,3 +1,13 @@
+---
+title: Monitoreo Fraude
+emoji: 🛡️
+colorFrom: blue
+colorTo: red
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🛡️ Sentinel AI - Monitoreo de Fraude
 
 ¡Bienvenido al repositorio de **Sentinel AI**! Este proyecto es un portafolio avanzado diseñado para demostrar la integración de modelos de Machine Learning (Inteligencia Artificial) en un entorno de producción para la **Detección de Fraude en Transacciones Financieras**.
