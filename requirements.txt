@@ -1,7 +1,7 @@
 numpy==1.26.4
 pandas
 scikit-learn
-tensorflow
+tensorflow==2.19.0
 joblib
 fastapi
 uvicorn
