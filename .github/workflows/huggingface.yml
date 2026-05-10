@@ -18,4 +18,4 @@ jobs:
       - name: Upload to Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: huggingface-cli upload Chelo13/monitoreofraude . . --repo-type=space
+        run: hf upload Chelo13/monitoreofraude . . --repo-type=space
