@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:7860"; // Cambiar a URL de HF Spaces en prod
+const API_URL = "https://chelo13-monitoreofraude.hf.space"; // Producción en HF Spaces
 
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Elementos del DOM
