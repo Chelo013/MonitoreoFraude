@@ -12,7 +12,7 @@ pinned: false
 
 ¡Bienvenido al repositorio de **Sentinel AI**! Este proyecto es un portafolio avanzado diseñado para demostrar la integración de modelos de Machine Learning (Inteligencia Artificial) en un entorno de producción para la **Detección de Fraude en Transacciones Financieras**.
 
-![Sentinel AI Dashboard Preview](https://via.placeholder.com/1200x600.png?text=Sentinel+AI+Dashboard) *(Puedes reemplazar esta imagen después)*
+> 🌐 **[Ver Demo en Vivo](https://monitoreo-fraude-eloo.vercel.app)** | 🤖 **[API Backend (HF Spaces)](https://chelo13-monitoreofraude.hf.space)**
 
 ## 🚀 Sobre el Proyecto
 
